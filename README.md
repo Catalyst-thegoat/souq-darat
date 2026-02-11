@@ -1,100 +1,249 @@
+# 🛒🇲🇦 Souq Darat - منصة التجارة المغربية
+
 <div align="center">
-    <a href="https://www.idurarapp.com/">
-  <img src="https://avatars.githubusercontent.com/u/50052356?s=200&v=4" width="128px" />
-    </a>
-    <h1>Open Source ERP / CRM Accounting Invoice Quote</h1>
-    <p align="center">
-        <p>IDURAR ERP CRM | Simple To Use</p>
-    </p>
-    
 
-```
- Give a Star ⭐️ & Fork to this project ... Happy coding! 🤩`
-```
+![Souq Darat](idurar-crm-erp.svg)
 
-IDURAR is Open Source ERP / CRM (Invoice / Quote / Accounting ) Based on Advanced Mern Stack (Node.js / Express.js / MongoDb / React.js ) with Ant Design (AntD) and Redux
+**The Ultimate ERP & Marketplace Platform for Morocco**
+
+منصة إدارة الأعمال والتجارة الإلكترونية للمقاولات المغربية
+
+[![License](https://img.shields.io/badge/License-Fair--Code-blue.svg)](LICENSE)
+![Forked from IDURAR](https://img.shields.io/badge/Forked%20from-IDURAR--ERP--CRM-8.2k%20stars-blue)
+
+**English** | [العربية](README_AR.md) | [Français](README_FR.md)
 
 </div>
 
-**🚀 Self-hosted Entreprise Version** : [https://cloud.idurarapp.com](https://cloud.idurarapp.com/)
+---
 
+## 🎯 About Souq Darat
 
-## Features :
+**Souq Darat** is a comprehensive ERP (Enterprise Resource Planning) and Marketplace platform tailored specifically for the Moroccan market. Built as an enhanced fork of [IDURAR ERP/CRM](https://github.com/idurar/idurar-erp-crm) (8,200+ stars).
 
-Invoice Management
+### 🇲🇦 Moroccan Features
 
-Payment Management
+| Feature | Description |
+|---------|-------------|
+| **DH Currency** | Full support for Moroccan Dirham (MAD/DHS) |
+| **Phone Numbers** | Moroccan phone format (+212) validation |
+| **CMI Payments** | Integrated CMI payment gateway |
+| **Arabic/French** | Complete bilingual interface |
+| **Moroccan VAT** | 20% VAT support with Moroccan tax rules |
+| **City Database** | All Moroccan cities (Casablanca, Rabat, Marrakech, etc.) |
 
-Quote Management
+---
 
-Customer Management
+## ✨ Key Features
 
-Ant Design Framework(AntD) 🐜
+### ERP Module
+- 📊 **Accounting** - Full double-entry accounting
+- 🧾 **Invoicing** - Generate invoices in Arabic/French
+- 📦 **Inventory Management** - Track stock across warehouses
+- 👥 **CRM** - Customer relationship management
+- 📈 **Sales** - Quotes, orders, deliveries
+- 💰 **Purchases** - Suppliers and purchase orders
 
-Based on Mern Stack (Node.js / Express.js / MongoDb / React.js ) 👨‍💻
+### E-Commerce
+- 🛒 **Online Store** - Full e-commerce capabilities
+- 🏪 **Multi-vendor** - Marketplace for multiple sellers
+- 🛍️ **Product Catalog** - Categories, variants, inventory
+- ⭐ **Reviews & Ratings** - Customer feedback
+- 🚚 **Delivery Management** - Track deliveries
 
-### May i can use IDURAR for Commercial use :
+### Payment Gateway
+- 💳 **CMI Integration** - Moroccan payment gateway
+- 🏦 **Bank Transfers** - Offline payment support
+- 💵 **Cash on Delivery** - Popular in Morocco
 
-- Yes You can use IDURAR for free for personal or Commercial use.
+---
 
-## Our Sponsors
+## 🚀 Quick Start
 
-  <a href="https://m.do.co/c/4ead8370b905?ref=idurarapp.com">
-    <img src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/PoweredByDO/DO_Powered_by_Badge_blue.svg" width="201px">
-  </a>
+### Prerequisites
+- Node.js 18+
+- MongoDB 6+
+- MongoDB Atlas or local instance
 
-#
+### Installation
 
-<img width="1403" alt="Open Source ERP CRM" src="https://github.com/idurar/idurar-erp-crm/assets/136928179/a6712286-7ca6-4822-8902-fb7523533ee8">
+```bash
+# Clone the repository
+git clone https://github.com/Catalyst-thegoat/souq-darat.git
+cd souq-darat
 
-## Free Open Source ERP / CRM App
+# Setup Backend
+cd backend
+cp .env.example .env
+# Edit .env with your MongoDB connection string
 
-IDURAR is Open "Fair-Code" Source ERP / CRM (Invoice / Inventory / Accounting / HR) Based on Mern Stack (Node.js / Express.js / MongoDb / React.js ) with Ant Design (AntD) and Redux
+npm install
+npm run setup
 
+# Setup Frontend (new terminal)
+cd ../frontend
+npm install
+npm run dev
+```
 
-## Getting started
+### Access Your Platform
+- **Frontend:** http://localhost:5173
+- **Backend API:** http://localhost:8080
+- **Admin Panel:** http://localhost:5173/admin
 
-1.[Clone the repository](INSTALLATION-INSTRUCTIONS.md#step-1-clone-the-repository)
+Default admin credentials created during setup.
 
-2.[Create Your MongoDB Account and Database Cluster](INSTALLATION-INSTRUCTIONS.md#Step-2-Create-Your-MongoDB-Account-and-Database-Cluster)
+---
 
-3.[Edit the Environment File](INSTALLATION-INSTRUCTIONS.md#Step-3-Edit-the-Environment-File)
+## 📁 Project Structure
 
-4.[Update MongoDB URI](INSTALLATION-INSTRUCTIONS.md#Step-4-Update-MongoDB-URI)
+```
+souq-darat/
+├── backend/              # Express.js API
+│   ├── src/
+│   │   ├── controllers/
+│   │   ├── models/
+│   │   ├── routes/
+│   │   ├── middlewares/
+│   │   └── setup/
+│   └── package.json
+├── frontend/            # React + Vite + Ant Design
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── redux/
+│   │   └── i18n/       # Arabic/French translations
+│   └── package.json
+├── doc/                 # Documentation
+└── features/            # Feature specifications
+```
 
-5.[Install Backend Dependencies](INSTALLATION-INSTRUCTIONS.md#Step-5-Install-Backend-Dependencies)
+---
 
-6.[Run Setup Script](INSTALLATION-INSTRUCTIONS.md#Step-6-Run-Setup-Script)
+## 🌐 Languages Supported
 
-7.[Run the Backend Server](INSTALLATION-INSTRUCTIONS.md#Step-7-Run-the-Backend-Server)
+| Language | Status | RTL |
+|----------|--------|-----|
+| 🇲🇦 Arabic | ✅ Complete | ✅ Yes |
+| 🇫🇷 French | ✅ Complete | ❌ No |
+| 🇬🇧 English | ✅ Available | ❌ No |
 
-8.[Install Frontend Dependencies](INSTALLATION-INSTRUCTIONS.md#Step-8-Install-Frontend-Dependencies)
+---
 
-9.[Run the Frontend Server](INSTALLATION-INSTRUCTIONS.md#Step-9-Run-the-Frontend-Server)
+## 💰 Moroccan Pricing Plans
 
-## Contributing
+| Plan | Price/Month | Features |
+|------|-------------|----------|
+| **Startup** | 299 MAD | Basic ERP, 5 users |
+| **Business** | 799 MAD | Full ERP + E-commerce |
+| **Enterprise** | 1999 MAD | Multi-branch, API access |
 
-1.[How to contribute](https://github.com/idurar/idurar-erp-crm/blob/master/CONTRIBUTING.md#how-to-contribute)
+---
 
-2.[Reporting issues](https://github.com/idurar/idurar-erp-crm/blob/master/CONTRIBUTING.md#reporting-issues)
+## 🔧 Configuration
 
-3.[Working on issues ](https://github.com/idurar/idurar-erp-crm/blob/master/CONTRIBUTING.md#working-on-issues)
+### Environment Variables (Backend)
 
-4.[Submitting pull requests](https://github.com/idurar/idurar-erp-crm/blob/master/CONTRIBUTING.md#submitting-pull-requests)
+```env
+# Server
+PORT=8080
+NODE_ENV=development
 
-5.[Commit Guidelines](https://github.com/idurar/idurar-erp-crm/blob/master/CONTRIBUTING.md#commit-guidelines)
+# MongoDB
+MONGODB_URI=mongodb://localhost:27017/souq-darat
 
-6.[Coding Guidelines](https://github.com/idurar/idurar-erp-crm/blob/master/CONTRIBUTING.md#coding-guidelines)
+# JWT
+JWT_SECRET=your-secret-key
+JWT_EXPIRES_IN=7d
 
-7.[Questions](https://github.com/idurar/idurar-erp-crm/blob/master/CONTRIBUTING.md#questions)
+# CMI Payment Gateway
+CMI_MERCHANT_ID=your-merchant-id
+CMI_SECRET_KEY=your-secret-key
+CMI_API_URL=https://test.cmi.ma/payment
 
+# Email (Resend)
+RESEND_API_KEY=re_xxxxx
 
-## Show your support
+# File Storage (AWS S3 compatible)
+AWS_ACCESS_KEY_ID=xxx
+AWS_SECRET_ACCESS_KEY=xxx
+AWS_REGION=eu-west-3
+AWS_BUCKET=souq-darat-files
+```
 
-Dont forget to give a ⭐️ to this project ... Happy coding!
+---
 
-**🚀 Self-hosted Entreprise Version** : [https://cloud.idurarapp.com](https://cloud.idurarapp.com)
+## 🛠️ Tech Stack
 
-## License
+### Backend
+- **Node.js** - Runtime
+- **Express** - Web framework
+- **MongoDB** - Database
+- **Mongoose** - ODM
+- **Redux Toolkit** - State management
+- **JWT** - Authentication
 
-IDURAR is Free Open Source Released under the GNU Affero General Public License v3.0.
+### Frontend
+- **React 18** - UIVite** - library
+- ** Build tool
+- **Ant Design 5** - UI component library
+- **Redux Toolkit** - State management
+- **React Router** - Navigation
+
+### Integrations
+- **CMI** - Moroccan payment gateway
+- **AWS S3** - File storage
+- **Resend** - Email delivery
+
+---
+
+## 📱 Screenshots
+
+![Dashboard](image.png)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md).
+
+### Ways to Contribute:
+- 🌐 Add more Moroccan cities
+- 🗣️ Improve Arabic/French translations
+- 💳 Add more payment gateways (CMI is priority)
+- 📊 Add Moroccan tax reports
+- 🐛 Fix bugs
+
+---
+
+## 📄 License
+
+This project is licensed under the Fair-code License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- **IDURAR Team** - For creating the amazing open-source ERP/CRM we forked
+- **Open Source Community** - For continuous support
+- **Moroccan Businesses** - For inspiring this project
+
+---
+
+## 📞 Support
+
+- **Email:** hello@souq-darat.com
+- **Website:** https://souq-darat.com
+- **WhatsApp:** https://wa.me/212600000000
+
+---
+
+<div align="center">
+
+**صُنع بحب للمقاولة المغربية** 🇲🇦
+
+**Made with love for Moroccan businesses**
+
+[Report Bug](https://github.com/Catalyst-thegoat/souq-darat/issues) | [Request Feature](https://github.com/Catalyst-thegoat/souq-darat/issues)
+
+</div>

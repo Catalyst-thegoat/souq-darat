@@ -1,9 +1,10 @@
 {
-  "name": "idurar-erp-crm",
-  "version": "4.1.0",
+  "name": "souq-darat-backend",
+  "version": "1.0.0",
+  "description": "Souq Darat - Moroccan ERP & Marketplace Platform | منصة التجارة المغربية",
   "engines": {
-    "npm": "10.2.4",
-    "node": "20.9.0"
+    "npm": ">=8.0.0",
+    "node": ">=18.0.0"
   },
   "scripts": {
     "start": "node src/server.js",
@@ -19,12 +20,12 @@
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
-    "currency.js": "2.0.4",
-    "dotenv": "16.3.1",
+    "currency.js": "^2.0.4",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-fileupload": "^1.4.3",
     "express-rate-limit": "^7.1.5",
-    "glob": "10.3.10",
+    "glob": "^10.3.10",
     "html-pdf": "^3.0.1",
     "joi": "^17.11.0",
     "jsonwebtoken": "^9.0.2",
@@ -42,21 +43,31 @@
     "transliteration": "^2.3.5"
   },
   "devDependencies": {
-    "nodemon": "3.0.1"
+    "nodemon": "^3.0.1"
   },
   "_moduleAliases": {
     "@": "src"
   },
   "main": "server.js",
-  "author": "IDURAR",
-  "email": "hello@idurarapp.com",
+  "author": "Catalyst",
+  "email": "hello@souq-darat.com",
   "license": "Fair-code License",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/idurar/idurar-erp-crm/.git"
+    "url": "git+https://github.com/Catalyst-thegoat/souq-darat.git"
   },
   "bugs": {
-    "url": "https://github.com/idurar/idurar-erp-crm//issues"
+    "url": "https://github.com/Catalyst-thegoat/souq-darat/issues"
   },
-  "homepage": "https://github.com/idurar/idurar-erp-crm/#readme"
+  "homepage": "https://github.com/Catalyst-thegoat/souq-darat/#readme",
+  "keywords": [
+    "erp",
+    "crm", 
+    "ecommerce",
+    "morocco",
+    "souq",
+    "marketplace",
+    "accounting",
+    "invoicing"
+  ]
 }
